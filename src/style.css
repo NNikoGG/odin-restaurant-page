@@ -1,0 +1,150 @@
+:root{
+    --green: hsl(145, 100%, 45%);
+    --red: #ff4b4b;
+    --white: #ffffff;
+    --grey: #e2e8f0;
+    --black: #121212;
+    --lightblack: hsl(0, 0%, 20%);
+    --shadow: rgba(0, 0, 0, 0.50) 0px 1px 4px;
+    --background: #f4ffaf;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    box-shadow: var(--shadow);
+}
+
+nav{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(252, 201, 36, 0.4);
+
+}
+
+nav h1{
+    color: #e6461a;
+    -webkit-text-stroke: 1px #000;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons button{
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid #e6461a;
+    border-radius: 14px;
+    cursor: pointer;
+    background: none;
+    font-size: 20px;
+    color: #e6461a;
+    -webkit-text-stroke: 0.4px #000;
+}
+
+#content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+    color: #ffffff;
+}
+
+/* #content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./restaurant.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+} */
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./restaurant.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+    /* height: 100vh; */
+}
+
+
+#content h2{
+    font-size: 50px;
+    margin: 10px;
+    z-index: 2;
+}
+
+#content h3{
+    font-size: 40px;
+    margin-bottom: 60px;
+    z-index: 2;
+}
+
+#content h2,h3{
+    color: #fcc924;
+    -webkit-text-stroke: 2px #76301d;
+}
+
+.info{
+    background-color: rgba(25, 25, 25,0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+    padding: 30px;
+    height: 200px;
+    width: 700px;
+    border-radius: 14px;
+    color: #fcc924;
+    z-index: 2;
+    font-size: 20px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hours img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.info > div{
+    margin: 20px;
+}
