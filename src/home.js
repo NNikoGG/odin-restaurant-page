@@ -1,9 +1,6 @@
 const createHomepage = () => {
     const content = document.querySelector('#content');
-    // const pageContent = document.createElement('div');
-    // pageContent.classList.add('page-content');
-    // content.appendChild(pageContent);
-    
+    content.innerHTML = "";
     const headline = document.createElement('h2');
     headline.textContent = `Welcome to the Wasteland's Finest Culinary Haven!`;
     content.appendChild(headline);
