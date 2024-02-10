@@ -8,6 +8,7 @@ const createHomepage = () => {
 
     const subtext = document.createElement('h3');
     subtext.textContent = 'Where Survival Meets Flavor!';
+    subtext.className = 'subtext';
     content.appendChild(subtext);
 
     const info = document.createElement('div');

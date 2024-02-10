@@ -1,3 +1,4 @@
+import createContactPage from "./contact";
 import createHomepage from "./home";
 import createMenuPage from "./menu";
 
@@ -18,6 +19,7 @@ const createHeader = () => {
     const homeButton = document.querySelector('#home-button');
     const menuButton = document.querySelector('#menu-button');
     const logoButton = document.querySelector('.logo');
+    const contactButton = document.querySelector('#contact-button');
 
     homeButton.addEventListener('click', () => {
         createHomepage();
@@ -27,6 +29,9 @@ const createHeader = () => {
     })
     menuButton.addEventListener('click', () => {
         createMenuPage();
+    })
+    contactButton.addEventListener('click', () => {
+        createContactPage();
     })
 }
 
