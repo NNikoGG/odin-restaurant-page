@@ -3,6 +3,7 @@ const createHomepage = () => {
     content.innerHTML = "";
     const headline = document.createElement('h2');
     headline.textContent = `Welcome to the Wasteland's Finest Culinary Haven!`;
+    headline.className = 'headline';
     content.appendChild(headline);
 
     const subtext = document.createElement('h3');

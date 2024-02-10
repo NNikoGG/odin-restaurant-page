@@ -1,6 +1,10 @@
 const createMenuPage = () => {
     const content = document.querySelector('#content');
     content.innerHTML = "";
+    const menuTitle = document.createElement('h2');
+    menuTitle.textContent = `Menu`;
+    menuTitle.className = 'menu-title';
+    content.appendChild(menuTitle);
     const menuContainer = document.createElement('div');
     menuContainer.className = 'menu-container';
     content.appendChild(menuContainer);
