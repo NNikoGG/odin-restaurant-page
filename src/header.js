@@ -6,7 +6,7 @@ const createHeader = () => {
     const header = document.querySelector('#header')
     header.innerHTML = `<nav>
                             <div class="logo">
-                                <img src="../src/logo.png" alt="">
+                                <img src="../src/images/logo.png" alt="">
                                 <h1>The Vault Diner</h1>
                             </div>
                             <div class="buttons">

@@ -14,11 +14,11 @@ const createHomepage = () => {
     const info = document.createElement('div');
     info.classList.add('info');
     info.innerHTML = `<div class="address">
-                        <img src="../src/location.png" alt="">
+                        <img src="../src/images/location.png" alt="">
                         <p>Vault 101, Main Street, <br> Capital Wasteland</p>
                     </div>
                     <div class="hours">
-                        <img src="../src/clock.png" alt="">
+                        <img src="../src/images/clock.png" alt="">
                         <p>Open Daily: 10:00 AM to 10:00 PM <br> Late Night Specials on Fridays and Saturdays: 10:00 PM to 2:00 AM</p>
                     </div>`
     content.appendChild(info);
