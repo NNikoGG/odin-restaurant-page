@@ -90,7 +90,6 @@ body::before {
     background-position: center;
     filter: blur(3px);
     z-index: -1;
-    /* height: 100vh; */
 }
 
 .headline{
